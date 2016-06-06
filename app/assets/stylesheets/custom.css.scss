@@ -18,11 +18,9 @@ $paper: #F4F4F4;
   font-weight: bold;
 }
 
-
 .center {
   text-align:center;
 }
-
 
 .jumbotron {
   height:550px;
@@ -41,12 +39,12 @@ $paper: #F4F4F4;
         background-color:$charcoal;
       }
     }
-}
-.jumbotron h1 {
-  color: $charcoal;
-  text-align:center;
-  margin-bottom: 30px;
-  letter-spacing: 3px;
+    h1{
+      color: $charcoal;
+      text-align:center;
+      margin-bottom: 30px;
+      letter-spacing: 3px;
+    }
 }
 
 .footer {
@@ -70,6 +68,14 @@ $paper: #F4F4F4;
       float:left;
       margin-left:15px;
     }
+  }
+}
+
+.buttonstyle {
+  background-color: $gold !important;
+  border-color:$gold !important;
+  &:hover {
+    background-color:$charcoal !important;
   }
 }
 
