@@ -23,7 +23,7 @@ $paper: #F4F4F4;
 }
 
 .jumbotron {
-  height:550px;
+  height:600px;
   background:
     linear-gradient(
       rgba(255,255,255,0.62),
@@ -53,6 +53,15 @@ $paper: #F4F4F4;
 }
 .description {
   margin-top: 0;
+}
+.article-title {
+  font-weight: bold;
+  font-size:1.5em;
+}
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer {
