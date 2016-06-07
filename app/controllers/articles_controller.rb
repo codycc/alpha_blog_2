@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:edit, :update,:show, :destroy]
   # require user to be logged in to edit their article,
   before_action :require_user, except: [:index, :show]
-  # require it to be the same user who created the article 
+  # require it to be the same user who created the article
   before_action :require_same_user, only: [:edit, :update, :destroy]
 
  # ACTIONS
@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
     if @article.save
       flash[:success] = "Article was successfully created"
       redirect_to article_path(@article)
