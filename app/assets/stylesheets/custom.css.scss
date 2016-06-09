@@ -25,11 +25,7 @@ $paper: #F4F4F4;
 .jumbotron {
   height:600px;
   background:
-    linear-gradient(
-      rgba(255,255,255,0.62),
-      rgba(255,255,255,0.62)
-    ),
-    url(homepageimage.jpg);
+    asset_url('beautiful-mist-wallpaper-hd-64.jpg');
     background-size:cover;
     .btn-xlarge{
       font-size: 1.7em;
@@ -99,6 +95,21 @@ $paper: #F4F4F4;
     li {
       float:left;
       margin-left:15px;
+    }
+  }
+}
+
+.badge {
+  background-color: $silk;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight:bold;
+  a{
+    color:white;
+    text-align:center;
+    &:hover {
+      text-decoration:none;
+
     }
   }
 }
